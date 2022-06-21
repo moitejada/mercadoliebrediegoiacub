@@ -1,11 +1,13 @@
 const express = require('express');
-//const path = require(path);
+const path = require(path);
 const app = express();
 
 //MIDDLEWARE
-app.use(express.static('public'));
+//app.use(express.static('public'));
 //Otra forma - en Playground
 //app.set('puerto', process.env.PORT !! 3000);
+
+app.use(express.static(path.resolve(__dirname, 'public')));
 
 const PORT = process.env.PORT || 3000;
 const HOST = process.env.HOST || 'localhost';
@@ -23,6 +25,8 @@ app.get('/login', (req,res)=>{
 app.get('/register', (req,res)=>{
     res.sendFile(__dirname + '/views/register.html');
 });
+
+//app.listen(3000, ()=> { console.log('listening on http://localhost:3000')})
 
 app.listen(3000, ()=>{
     console.log(`Server running at http://${HOST}:${PORT}/`);
