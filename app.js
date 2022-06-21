@@ -3,11 +3,11 @@ const path = require(path);
 const app = express();
 
 //MIDDLEWARE
-//app.use(express.static('public'));
+app.use(express.static('public'));
 //Otra forma - en Playground
 //app.set('puerto', process.env.PORT !! 3000);
 
-app.use(express.static(path.resolve(__dirname, 'public')));
+//app.use(express.static(path.resolve(__dirname, 'public')));
 
 const PORT = process.env.PORT || 3000;
 const HOST = process.env.HOST || 'localhost';
