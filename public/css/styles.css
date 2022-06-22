@@ -1,10 +1,8 @@
-/* Para que el texto se ajuste correctamente a la pagina */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 } 
-
 
 /* HEADER */
 
@@ -12,10 +10,8 @@ header {
 background-color: #EAC926;
 }
 
-/* Imagen de mercado liebre (logo) */
-
-.imagenLogo {
-    width: 50%;
+.logo {
+    width: 25%;
 }
 
 /* Barra de busqueda */
@@ -50,7 +46,7 @@ ul {
     list-style: none;
 }
 
-.main-navbar a {
+.toda-navbar a {
     text-decoration: none;
     color: black;
 }
@@ -124,25 +120,24 @@ main section article i{
     }
 
 
-.precio {
+.price {
     font-size: 18px;
     text-align: left;
-    flex-grow: 0.3;   /* Tambien se puede utilizar width con mismo porcentaje */
+    flex-grow: 30%;
 }
 
-.descuentos{
+.discount{
     font-size: 16px;
     color: greenyellow;
     text-align: left;
-    flex-grow: 0.7; /* Tambien se puede utilizar width con mismo porcentaje */
-
+    flex-grow: 70%;
 }
 
-.descripcion {
+.description {
     font-size: 16px;
 }
-/* Precio y descuento guardado en un div y poniendo flexBox */
-.precio-descuento {
+
+.price-discount {
     display: flex;
     margin-top: 5px;
 }
@@ -171,7 +166,7 @@ footer {
 
 /* Mobile */
 @media (max-width: 480px) {
-    .descripcion {
+    .description {
         display: none;
     }
      nav {
@@ -202,7 +197,7 @@ padding: 10px;
             justify-content: space-between;
             align-items: center;
         }
-        .imagenLogo {
+        .logo {
             width: 33%;
         }
         .buscador {
@@ -213,35 +208,30 @@ padding: 10px;
             font-size: 12px;
             text-align: left;
         }
-        .main-navbar {
+        .toda-navbar {
             display: flex;
             justify-content: space-between;
             margin-top: 30px;
         }
-        .main-navbar ul {
+        .toda-navbar ul {
             display: flex;
         }
-        .main-navbar li {
+        .toda-navbar li {
             margin: 10px 10px;
         }
-       /* section {
-           display: flex;
-           justify-content: space-around;
-           width: 100%;
-           border: solid 5px red;
-       } */
-       section div.first-article {
+       
+       .section div.products {
            display: flex;
        }
 
-       article {
+       /*article {
            padding: 20px;
        }
-      
+      */
     }
 /* Desktops and monitors */
     @media (min-width: 1200px) {
-        .headerLogo-busqueda, .main-navbar {
+        .headerLogo-busqueda, .toda-navbar {
             max-width: 1200px;
             margin: auto;
         }
@@ -251,12 +241,12 @@ padding: 10px;
             width: 100%;
             align-items: center;
         }
-        .descripcion {
+        .description {
             opacity: 0;
            transition-property: all;
            transition-duration: 0.5s;
         }
-        .descripcion:hover {
+        .description:hover {
             opacity: 100;
         }
         article {
@@ -293,11 +283,11 @@ padding: 10px;
        .iconos:hover {
            color:#39b54a;
        }
-       .left-navbar li {
+       .izquierda-navbar li {
            transition-property: all;
            transition-duration: 0.5s;
        }
-       .left-navbar li:hover {
+       .izquierda-navbar li:hover {
            text-decoration: underline;
        }
        .right-navbar li {
