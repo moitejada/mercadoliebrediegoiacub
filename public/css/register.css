@@ -1,0 +1,274 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #EAC926;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+body {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(227, 227, 227, 0.812);
+}
+
+img {
+    width: 30%;
+}
+
+h3 {
+    background-color: #EAC926;
+    display: inline-block;
+    border-radius: 0.3em;
+    padding: 5px;
+    border: solid black 1px;
+}
+
+
+label {
+    font-size: 15px;
+    background-color: #EAC926;
+    opacity: 0.7;
+    border-radius: 0.3em;
+    padding: 5px;
+    width: 30%;
+}
+
+input {
+    border-radius: 0.5em;
+    height: 30px;
+    background-color:rgba(227, 227, 227, 0.812);
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+
+input:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.contenedor-formulario {
+    border: solid 1px black;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 0.5em;
+    transition-property: all;
+    transition-duration: 0.5s;
+    max-width: 700px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.contenedor-formulario:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+form {
+    margin: 100px;
+}
+
+.name-subname {
+    display: flex;
+    justify-content: left;
+    margin: 20px 0px;
+}
+
+/* .name-subname label {
+    margin-right: 16px;
+} */
+
+.nickname {
+    display: flex;
+    justify-content: left;
+    margin: 20px 0px;
+}
+
+.email {
+    display: flex;
+    justify-content: left;
+    margin: 20px 0px;
+}
+/* .email label {
+    margin-right: 14%;
+} */
+
+.fecha-nacimiento {
+    display: flex;
+    justify-content: left;
+    margin: 20px 0px;
+    flex-direction: column;
+}
+
+.fecha-nacimiento input {
+    margin-top: 10px;
+    width: 30%;
+}
+.profile-user {
+    display: flex;
+    justify-content: left;
+    margin: 20px 0px;
+    flex-direction: column;
+}
+/* Configuracion particular input */
+.profile-user input {
+    background-color: white;
+    box-shadow: none;
+    height: auto;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.profile-user div {
+    margin: 0px 10px;
+}
+
+.home-direction {
+    display: flex;
+    justify-content: left;
+    margin: 20px 0px;
+}
+
+.intereses {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+/* Configuracion particular input */
+.intereses input {
+    background-color: white;
+    box-shadow: none;
+    height: auto;
+    padding: 0;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* .intereses div {
+    margin-right: 10px;
+} */
+
+.profile-pic {
+    display: flex;
+    justify-content: left;
+    margin: 20px 0px;
+    flex-direction: column;
+}
+/* Configuracion particular input */
+.profile-pic input {
+    background-color: white;
+    box-shadow: none;
+    height: auto;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.password {
+    display: flex;
+    justify-content: left;
+    margin: 20px 0px;
+}
+
+.confirm-pass {
+    display: flex;
+    justify-content: left;
+    margin: 20px 0px;
+}
+
+
+.send-delete {
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+}
+
+.send-delete a {
+    margin: 0px 30px;
+}
+
+.send-delete a input {
+    background-color: green;
+    opacity: 0.5;
+    border-radius: 0.3em;
+    font-weight: bold;
+    padding: 10px;
+    border: solid 1px green;
+    transition: all 0.2s;
+    height: 40px;
+}
+
+.send-delete a input:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.send-delete button {
+    background-color: red;
+    opacity: 0.5;
+    border-radius: 0.3em;
+    font-weight: bold;
+    padding: 10px;
+    border: solid 1px red;
+    transition: all 0.2s;
+}
+
+.send-delete button:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+
+/* Tablets */
+@media (max-width: 768px) {
+    .contenedor-formulario {
+        padding: 5%;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    form {
+        margin: 0;
+        text-align: left;
+    }
+
+    .intereses label {
+        margin: 0
+    }
+
+    
+}
+
+@media (max-width: 420px) {
+
+    .contenedor-formulario {
+        margin-bottom: 5px;
+    }
+    
+    input {
+        width: 90%;
+    }
+
+    .intereses  {
+        flex-direction: column;
+    }
+
+    .profile-pic {
+        flex-direction: column;
+    }
+
+    .profile-pic input {
+        margin-top: 10px;
+    }
+    .profile-pic label {
+        width: 50%;
+    }
+
+    label {
+        padding: 1px;
+        width: 90%;
+    }
+}

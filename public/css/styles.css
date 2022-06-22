@@ -1,150 +1,114 @@
+/* Para que el texto se ajuste correctamente a la pagina */
 *{
-    margin: 0px;
-    padding: 0px;    
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+} 
+
+
+/* HEADER */
+
+header {
+background-color: #EAC926;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: #ebebeb;
-}
+/* Imagen de mercado liebre (logo) */
 
-h3{
-    font-size: 50px;
-}
-
-p{
-    font-size: 12px;
-}
-
-div.top-header{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5%;
-}
-
-header div.top-header p{
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-}
-
-header{
-    background-color: #EAC926;
-}
-
-header div.logo,
-header .form{
+.imagenLogo {
     width: 50%;
 }
 
-header div.logo{
-    padding: 10px;
-}
-header .form{
-    display: flex;
-    align-items: center;
-    padding: 2px;
-    font-size: 11px;
-}
-header nav{
-    font-size: 12px;
-    margin-left: 20px;
+/* Barra de busqueda */
+
+.buscador {
+    font-size: 10px;
+    width: 40%;
+    border-radius: 0.3em;
+    height: 40%;
 }
 
-header ul li{
-    list-style-type: none;
+/* Icono de lupa (buscador) */
+
+.lupa {
+    background-color: #ebebeb;
+    padding: 5px;
+    border-radius: 0.3em;
+    height: 40%;
 }
 
-header ul li a{
-    text-decoration: none;
-    color: #000;
-}
+/* Compra en cuotas y tarjeta de credito  */
 
-header .form .input{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
-}
-
-header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 10%;
-}
-
-div.burger-menu{
+.cuotas {
+    padding-left: 5%;
+    font-size: 15px;
+    width: 100%;
     text-align: center;
 }
 
-div.burger-menu i{
-    background-color: #0044AA;
-    border-radius: 5px;
-    color: #FFF;
+/* NAVBAR */
+ul {
+    list-style: none;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* Menu de la hamburguesa */
+.burger-menu {
+    background-color: blue;
+    color: white;
     font-size: 20px;
-    height: 40px;
-    margin: 10px 0px 20px 0px;
+    position: relative;
+    display: inline-block;
+    left: 45%;
     padding: 10px;
-    width: 40px;
-}
-
-div.last-visit,
-div.offers{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.price{
-    font-size: 18px;
-    width: 30%;
-}
-
-.discount{
-    width: 70%;
-}
-
-.discount,
-.description{
-    font-size: 16px;
-    font-weight: normal;
-}
-
-h3,
-.description{
-    color: #666;
-}
-
-.description{
-    display: none;
-    margin-top: 20px;
-}
-
-section.banner img{
-    width: 100%;
-}
-
-main{
-    width: 90%;
-    margin: 0 auto;
-}
-
-main section article{
-    background-color: #fff;    
+    border-radius: 0.3em;
     margin: 10px 0px;
 }
-
-main section article img{
-    width: 100%;
+/* Banner ML */
+.banner img {
+    width: 100vw;
 }
 
-main section article i,
-.discount{
-    color: #39b54a;
+/* BODY */
+body {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
 }
 
+h3 {
+    font-size: 24px;
+}
+
+main {
+    place-content: center;
+    width: 90vw;
+    margin: 20px;
+    background-color: rgba(227, 227, 227, 0.812);
+}
+
+/* Secciones de los articulos */
+article  {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    margin: 10px;
+    background-color: #ffff;
+}
+
+article img {
+    width: 90%;
+    height: 90%;
+}
+
+article div.barra {
+    border-top: solid 1px #ebebeb;
+    position: relative;
+}
+/* Icono del camion */
 main section article i{
     display: block;
     font-size: 16px;
@@ -157,62 +121,191 @@ main section article i{
     position: absolute;
     right: 20px;
     top: -15px;
+    }
+
+
+.precio {
+    font-size: 18px;
+    text-align: left;
+    flex-grow: 0.3;   /* Tambien se puede utilizar width con mismo porcentaje */
 }
 
-main section h3{
-    margin: 20px 0px;
+.descuentos{
+    font-size: 16px;
+    color: greenyellow;
+    text-align: left;
+    flex-grow: 0.7; /* Tambien se puede utilizar width con mismo porcentaje */
+
 }
 
-main section div.products article i{
-    transition: transform 1s;
+.descripcion {
+    font-size: 16px;
 }
-
-main section div.products article:hover i{
-    transform: rotate(-90deg);
-}
-
-article div.main-article{
-    width: 100%;
+/* Precio y descuento guardado en un div y poniendo flexBox */
+.precio-descuento {
     display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    border-top: 1px solid #ebebeb;
-    position: relative;
-    padding: 15px;
-}
-main section article:hover{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}
-main section article:hover .description{
-    display: block;
+    margin-top: 5px;
 }
 
-.login input[type='submit']:hover,
-.register input[type='submit']:hover{
-    background-color: #0022AA;
+.logo-envio {
+    color: green;
+}
+/* Footer  */
+
+footer {
+    text-align: center;
+    height: 20vh;
 }
 
-@media (min-width: 361px){
-    main section div.products{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
+.iconos {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: blue;
+}
+
+.copy-right {
+    margin: 10px 5px;
+    text-align: center;
+}
+
+
+/* Mobile */
+@media (max-width: 480px) {
+    .descripcion {
+        display: none;
     }
+     nav {
+    display: none;
+    }
+    .headerLogo-busqueda {
+display: flex;
+flex-wrap: wrap;
+padding: 10px;
+}
+
     
-    main section div.products article{
-        width: 45%;
+}
+    /*Mobile large  */
+    @media (min-width: 481px) {
+     article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+     }
+     .burger-menu {
+         display: none;
+     }
     }
 
-    .price,
-    .discount{
-        width: 50%;
-    }
-}
+    /* Tablet */
+    @media (min-width: 768px) {
+        .headerLogo-busqueda {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .imagenLogo {
+            width: 33%;
+        }
+        .buscador {
+            width: 33%;
+        }
+        .cuotas {
+            width: 60%;
+            font-size: 12px;
+            text-align: left;
+        }
+        .main-navbar {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .main-navbar ul {
+            display: flex;
+        }
+        .main-navbar li {
+            margin: 10px 10px;
+        }
+       /* section {
+           display: flex;
+           justify-content: space-around;
+           width: 100%;
+           border: solid 5px red;
+       } */
+       section div.first-article {
+           display: flex;
+       }
 
-@media (min-width: 769px){
-    main section div.products article{
-        width: 22%;
+       article {
+           padding: 20px;
+       }
+      
     }
-}
+/* Desktops and monitors */
+    @media (min-width: 1200px) {
+        .headerLogo-busqueda, .main-navbar {
+            max-width: 1200px;
+            margin: auto;
+        }
+        section {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+        }
+        .descripcion {
+            opacity: 0;
+           transition-property: all;
+           transition-duration: 0.5s;
+        }
+        .descripcion:hover {
+            opacity: 100;
+        }
+        article {
+            box-shadow: none;
+            transition-property: all;
+            transition-duration: 0.5s;
+        }
+        article:hover {
+            box-shadow:0px 0px 10px rgb(100, 100, 100) ;
+        }
+        main section article i {
+            transition: all 0.5s;
+        }
+        main section article i:hover {
+            transform:rotateZ(-90deg);
+        }
+        
+        .footer-design {
+            display: flex;
+        }
+        .copy-right {
+            text-align: left;
+            margin-top: 40px;
+            font-weight: bold;
+        }
+       .texto-footer {
+           display: flex;
+           margin: 0 50px;
+       }
+
+       .iconos {
+           transition: all 0.3s;
+       }
+       .iconos:hover {
+           color:#39b54a;
+       }
+       .left-navbar li {
+           transition-property: all;
+           transition-duration: 0.5s;
+       }
+       .left-navbar li:hover {
+           text-decoration: underline;
+       }
+       .right-navbar li {
+           transition-property: all;
+           transition-duration: 0.5s;
+       }
+       .right-navbar li:hover {
+        text-decoration: underline;
+       }
+
+    }
