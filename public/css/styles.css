@@ -163,6 +163,14 @@ main section h3{
     margin: 20px 0px;
 }
 
+main section div.products article i{
+    transition: transform 1s;
+}
+
+main section div.products article:hover i{
+    transform: rotate(-90deg);
+}
+
 article div.main-article{
     width: 100%;
     display: flex;
@@ -172,16 +180,19 @@ article div.main-article{
     position: relative;
     padding: 15px;
 }
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+main section article:hover .description{
+    display: block;
+}
+
+.login input[type='submit']:hover,
+.register input[type='submit']:hover{
+    background-color: #0022AA;
+}
 
 @media (min-width: 361px){
-    main section article .description{
-        display: block;
-    }
-
-    main section article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-
     main section div.products{
         display: flex;
         flex-direction: row;
