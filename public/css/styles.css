@@ -39,6 +39,7 @@ background-color: #EAC926;
     font-size: 15px;
     width: 100%;
     text-align: center;
+    padding: 5px;
 }
 
 /* NAVBAR */
@@ -63,7 +64,7 @@ ul {
     left: 45%;
     padding: 10px;
     border-radius: 0.3em;
-    margin: 10px 0px;
+    margin: 5px 0px;
 }
 /* Banner ML */
 .banner img {
@@ -78,6 +79,7 @@ body {
 
 h3 {
     font-size: 24px;
+    padding: 10px;
 }
 
 main {
@@ -266,6 +268,7 @@ padding: 10px;
         
         .footer-design {
             display: flex;
+            margin:10px;
         }
         .copy-right {
             text-align: left;
