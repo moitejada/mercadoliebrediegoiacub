@@ -11,14 +11,14 @@ background-color: #EAC926;
 }
 
 .logo {
-    width: 25%;
+    width: 25vw;
 }
 
 /* Barra de busqueda */
 
 .buscador {
     font-size: 10px;
-    width: 35%;
+    width: 35vw;
     border-radius: 0.3em;
     height: 23px;
 }
@@ -36,9 +36,9 @@ background-color: #EAC926;
 
 .cuotas {
     font-size: 12px;
-    width: 40%;
-    text-align: center;
-    padding: 5px;
+    width: 30vw;
+    text-align: right;
+    padding: 15px;
 }
 
 /* NAVBAR */
@@ -210,9 +210,9 @@ padding: 10px;
     @media (min-width: 768px) {
         .headerLogo-busqueda {
             display: flex;
-            justify-content: space-between;
             align-items: center;
             padding: 20px;
+            justify-content: space-evenly;
         }
         .logo {
             display: flex;
@@ -258,6 +258,8 @@ padding: 10px;
         .headerLogo-busqueda, .toda-navbar {
             max-width: 1200px;
             margin: auto;
+            justify-content: space-evenly;
+            display: flex;
         }
         section {
             display: flex;
