@@ -18,9 +18,9 @@ background-color: #EAC926;
 
 .buscador {
     font-size: 10px;
-    width: 40%;
+    width: 35%;
     border-radius: 0.3em;
-    height: 40%;
+    height: 23px;
 }
 
 /* Icono de lupa (buscador) */
@@ -35,9 +35,8 @@ background-color: #EAC926;
 /* Compra en cuotas y tarjeta de credito  */
 
 .cuotas {
-    padding-left: 5%;
-    font-size: 15px;
-    width: 100%;
+    font-size: 12px;
+    width: 40%;
     text-align: center;
     padding: 5px;
 }
@@ -47,10 +46,16 @@ ul {
     list-style: none;
 }
 
+.toda-navbar {
+    align-items: center;
+}
+
+
+
 .toda-navbar a {
     text-decoration: none;
     color: black;
-}
+    }
 
 
 
@@ -84,7 +89,6 @@ h3 {
 
 main {
     place-content: center;
-    width: 90vw;
     margin: 20px;
     background-color: rgba(227, 227, 227, 0.812);
 }
@@ -133,6 +137,7 @@ main section article i{
     color: greenyellow;
     text-align: left;
     flex-grow: 70%;
+    padding-left: 5px;
 }
 
 .description {
@@ -179,7 +184,10 @@ display: flex;
 flex-wrap: wrap;
 padding: 10px;
 }
-
+.cuotas h2{
+    font-size: 12px;
+    text-align: center;
+}
     
 }
     /*Mobile large  */
@@ -190,6 +198,12 @@ padding: 10px;
      .burger-menu {
          display: none;
      }
+     .cuotas h2{
+        font-size: 12px;
+        text-align: center;
+    }
+
+
     }
 
     /* Tablet */
@@ -198,22 +212,30 @@ padding: 10px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 20px;
         }
         .logo {
-            width: 33%;
+            display: flex;
+            
         }
         .buscador {
-            width: 33%;
+            display: flex;
+            
         }
         .cuotas {
-            width: 60%;
+            display:flex;
+            
+        }
+        .cuotas h2{
             font-size: 12px;
             text-align: left;
         }
+
         .toda-navbar {
             display: flex;
             justify-content: space-between;
-            margin-top: 30px;
+            align-items: center;
+            
         }
         .toda-navbar ul {
             display: flex;
@@ -243,14 +265,7 @@ padding: 10px;
             width: 100%;
             align-items: center;
         }
-        .description {
-            opacity: 0;
-           transition-property: all;
-           transition-duration: 0.5s;
-        }
-        .description:hover {
-            opacity: 100;
-        }
+        
         article {
             box-shadow: none;
             transition-property: all;
@@ -271,7 +286,7 @@ padding: 10px;
             margin:10px;
         }
         .copy-right {
-            text-align: left;
+            text-align: center;
             margin-top: 40px;
             font-weight: bold;
         }
@@ -280,12 +295,6 @@ padding: 10px;
            margin: 0 50px;
        }
 
-       .iconos {
-           transition: all 0.3s;
-       }
-       .iconos:hover {
-           color:#39b54a;
-       }
        .izquierda-navbar li {
            transition-property: all;
            transition-duration: 0.5s;
