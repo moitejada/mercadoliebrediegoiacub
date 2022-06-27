@@ -133,7 +133,7 @@ main section article i{
 }
 
 .discount{
-    font-size: 16px;
+    font-size: 18px;
     color: greenyellow;
     text-align: left;
     flex-grow: 70%;
@@ -195,15 +195,47 @@ padding: 10px;
      article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
      }
-     .burger-menu {
-         display: none;
-     }
-     .cuotas h2{
+     .headerLogo-busqueda {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        justify-content: space-evenly;
+    }
+    .logo {
+        display: flex;
+        
+    }
+    .buscador {
+        display: flex;
+        
+    }
+    .cuotas {
+        display:flex;
+        
+    }
+    .cuotas h2{
         font-size: 12px;
         text-align: center;
     }
 
+    .toda-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .toda-navbar ul {
+        display: flex;
+    }
+    .toda-navbar li {
+        margin: 10px 10px;
+    }
+   
 
+     .burger-menu {
+         display: none;
+     }
+     
     }
 
     /* Tablet */
@@ -228,7 +260,7 @@ padding: 10px;
         }
         .cuotas h2{
             font-size: 12px;
-            text-align: left;
+            text-align: center;
         }
 
         .toda-navbar {
